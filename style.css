@@ -1,0 +1,330 @@
+* /* Basic styles */
+
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #faf6f6; /* Dark gray text */
+    background: linear-gradient(145deg, #04048ae3, #010005);
+    
+    }
+
+    header {
+        background: linear-gradient(145deg, #111111, #070130); /* Dark header */
+        color: #fff;
+        padding: 1rem 0;
+        position: fixed; /* Sticky header */
+        width: 100%;
+        z-index: 100; /* Ensure it's on top */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between; /* Space logo and links */
+        align-items: center;
+        max-width: 960px; /* Limit width */
+        margin: 0 auto;
+        padding: 0 20px; /* Add some side padding */
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #hero {
+        background: linear-gradient(145deg, #000003, #11118f);
+        padding: 40px 10px;
+        text-align: top left;
+        margin-left: 00px;
+    
+    }
+    .profile-image {
+        position: right;
+        width: 550px; /* Adjust as needed */
+        height: 550px; /* Adjust as needed */
+        border-radius: 300%; /* Make it round */
+        margin-right: 300px; /* Add spacing between image and text */
+        }
+
+    .hero-content  {
+            max-width: 2px;
+            margin: 20px auto;
+            display: flexbox; /* Use flexbox for layout */
+            align-items: right; /* Vertically center content */
+    }
+    
+
+    #hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: #007bff; /* Blue button */
+        color: #fff;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    #about {
+        background: linear-gradient(145deg, #04048ae3, #010005);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about-content {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center content */
+    }
+
+    .image {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border-radius: 100%; /* Make it round */
+    margin-right: 100px; /* Add spacing between image and text */
+    }
+    /* Skills Section */
+    .skills {
+        padding: 4rem 2rem;
+        background: linear-gradient(145deg, #4b2fbb, #3204ec);
+        text-align: center;
+    }
+    
+    .skills h2 {
+        font-size: 3rem;
+        color: #d2e2e1;
+        text-shadow: 0 0 20px #150538, 0 0 40px #5426eb;
+        margin-bottom: 2rem;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        animation: fadeUp 2s ease-in-out forwards;
+    }
+    
+    .skill-card {
+        width: 220px;
+        height: 280px;
+        background: linear-gradient(145deg, #00010a, #2a2a2a);
+        border-radius: 15px;
+        color: #fff;
+        box-shadow: 0 10px 20px rgba(3, 31, 244, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.5s ease-in-out;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .skill-card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 20px 40px rgba(4, 37, 181, 0.6);
+        background: linear-gradient(145deg, #3503da, #121212);
+    }
+    
+    .skill-card:hover h3 {
+        color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #1eae98;
+    }
+    
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
+        animation: popIn 1s ease-in-out;
+    }
+    
+    .skill-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #1b05a7;
+        transition: color 0.3s ease;
+    }
+    
+    .progress-bar {
+        width: 80%;
+        height: 10px;
+        background: #f4f3f7;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 1rem;
+    }
+    
+    .progress {
+        height: 100%;
+        width: 0;
+        border-radius: 5px;
+        animation: fillBar 2s ease-in-out forwards;
+    }
+    #projects {
+        background: linear-gradient(145deg, #000005, #2904df);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Space between projects */
+        
+    }
+
+    .project {
+        width: 30%; /* Adjust width for responsiveness */
+
+        border: 1px solid #0512ff;
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in width */
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(11, 7, 252, 0.1); /* Add a subtle shadow */
+    }
+    
+
+    .project video {
+        max-width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    #contact {
+        background: linear-gradient(145deg, #0b0b0b, #1204ac);
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #contact form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #dbdfe6;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    #contact button {
+        background-color: #070707;
+        color: #f8f8fc;
+        padding: 10px 20px;
+        border: none;
+        border-radius
+    }
+        
+    /
+    /* Footer */
+  .footer {
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .footer a {
+    
+    text-decoration: none;
+    transition: color 0.3s ease;
+    align-items: center;
+  }
+
+  .gmail-icon{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+    animation: popIn 1s ease-in-out;
+    display:inline;
+    margin: 25px 10px;
+    
+}
+  
+    .likedln-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1rem;
+        animation: popIn 1s ease-in-out;
+        display:inline;
+        margin: 25px 10px;
+        
+    }
+    .github-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1rem;
+        animation: popIn 1s ease-in-out;
+        display:inline;
+        margin: 25px 10px;
+    }
+    .telegram-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1rem;
+        animation: popIn 1s ease-in-out;
+        display:inline;
+        margin: 25px 10px;
+    }
+    .whatsapp-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1rem;
+        animation: popIn 1s ease-in-out;
+        display:inline;
+        margin: 25px 10px;
+
+
+        }
+        .footer p {
+        font-size: 0.8rem;
+        }
+        .project-video{
+        width: 250px;
+        height: 200px;
+        }
+        .project-screenshot {
+        width: 250px;
+        height: 200px;
+        }
+    }
