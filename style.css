@@ -11,7 +11,7 @@
     }
 
     header {
-        background: linear-gradient(145deg, #111111, #070130); /* Dark header */
+        background: linear-gradient(145deg, #04048ae3, #010005); /* Dark header */
         color: #fff;
         padding: 1rem 0;
         position: fixed; /* Sticky header */
@@ -50,7 +50,7 @@
     }
 
     #hero {
-        background: linear-gradient(145deg, #000003, #11118f);
+        background: linear-gradient(145deg, #04048ae3, #010005);
         padding: 40px 10px;
         text-align: top left;
         margin-left: 00px;
@@ -79,7 +79,7 @@
 
     .cta-button {
         display: inline-block;
-        background-color: #007bff; /* Blue button */
+        background-color: #0f0f0f; /* Blue button */
         color: #fff;
         padding: 1rem 2rem;
         text-decoration: none;
@@ -108,14 +108,14 @@
     /* Skills Section */
     .skills {
         padding: 4rem 2rem;
-        background: linear-gradient(145deg, #4b2fbb, #3204ec);
+        background: linear-gradient(145deg,  #04048ae3, #010005);
         text-align: center;
     }
     
     .skills h2 {
         font-size: 3rem;
         color: #d2e2e1;
-        text-shadow: 0 0 20px #150538, 0 0 40px #5426eb;
+        text-shadow: 0 0 20px #150538, 0 0 40px #070707;
         margin-bottom: 2rem;
         animation: fadeIn 1.5s ease-in-out forwards;
     }
@@ -242,7 +242,7 @@
     }
 
     #contact button {
-        background-color: #070707;
+        background-color:  #04048ae3, #010005,
         color: #f8f8fc;
         padding: 10px 20px;
         border: none;
